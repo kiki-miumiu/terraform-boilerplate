@@ -1,8 +1,6 @@
 terraform {
   backend "s3" {
-    bucket  ="terraform-state-<accountid>"
-    key     = "textract/terraform.tfstate"
-    region  = "ap-southeast-2"
+    # To be filled with terraform init --backend-config=env/dev01_SD000_001.conf
   }
   required_version = ">= 1.9.7"
   required_providers {
